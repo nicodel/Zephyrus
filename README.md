@@ -36,7 +36,7 @@ The Zephyrus Project aims to be a GPS Navigation system running on the web. It w
 ### Map rendering
 * Map is displayed in 3D, with a "fog" at the top end to better map ending.
 * Map moves around device position, movements based on the device direction.
-* Zoom in and out based on the device speed.
+* Zoom in and out based on the device speed, and distance to next route change.
 
 ## Project steps
 
@@ -45,4 +45,4 @@ The Zephyrus Project aims to be a GPS Navigation system running on the web. It w
 3. **Search:** Search for an address an show the result on a map.
 4. **Retreive:** Retreive position pointed by the user finger on the map.
 5. **Calculate:** Calculate route between 2 given points and display the result on a map.
-6. **...:** to be defined
+6. **...** to be defined
