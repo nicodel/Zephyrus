@@ -26,12 +26,12 @@ The Zephyrus Project aims to be a GPS Navigation system running on the web. It w
 
 ### Display
 * Elements displayed during navigation are:
-+ Next route change: type of change (direction, speedway, roundabout ...), distance to this change and name of the street after the change.
-+ Speed (if device in movment).
-+ Estimated time to arrival
-+ Remaining distance to arrival
-+ A scale of the actual map size.
-+ Position of device represented by a icon (car, arrow...) that can be customized. Not prioritory.
+  + Next route change: type of change (direction, speedway, roundabout ...), distance to this change and name of the street after the change.
+  + Speed (if device in movment).
+  + Estimated time to arrival
+  + Remaining distance to arrival
+  + A scale of the actual map size.
+  + Position of device represented by a icon (car, arrow...) that can be customized. Not prioritory.
 
 ### Map rendering
 * Map is displayed in 3D, with a "fog" at the top end to better map ending.
