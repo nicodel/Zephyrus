@@ -23,7 +23,7 @@ The Zephyrus Project aims to be a GPS Navigation system running on the web. It w
 
 ### Routing calculation
 * Open Source Routing Machine (OSRM) - http://map.project-osrm.org/
-* 
+
 ### Display
 * Elements displayed during navigation are:
 + Next route change: type of change (direction, speedway, roundabout ...), distance to this change and name of the street after the change.
