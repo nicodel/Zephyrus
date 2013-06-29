@@ -12,35 +12,43 @@
     <style>
       body {
         margin:0;
+        padding:0;
+        margin:auto;
       }
       #map {
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        height: 600px;
       }
-      @media (max-width: 320px) {
-        #map {
-          width: 320px;
-          height: 400px;
-        }
+      .infos {
+        font-size:1.2em;
+      }
+      button {
+        font-size:1.3em;
       }
       @media (max-width: 360px) {
         #map {
-          width: 360px;
+          width: 100%;
           height: 400px;
+        }
+        @media (max-width: 320px) {
+          #map {
+            width: 100%;
+            height: 400px;
+          }
         }
       }
     </style>
-    <!-- <script src="../lib/leaflet/leaflet.js"></script>-->
   </head>
   
   <body>
     <div id="map"></div>
     <div id="status">
-      <div id="accuracy">Accuracy:</div>
-      <div id="lat">Latitude:</div>
+      <div id="accuracy" class="infos">Accuracy:</div>
+      <!-- <div id="lat">Latitude:</div>
       <div id="lon">Longitude:</div>
-      <div id="speed">Speed:</div>
-      <div id="time">Time:</div>
+-->
+      <div id="speed" class="infos">Speed:</div>
+      <div id="time" class="infos">Time:</div>
     </div>
     <button onclick="onFollow()">Follow</button>
   </body>
