@@ -72,6 +72,8 @@ var style = {
   strokeWidth: 0
 };
 
+OpenLayers.Renderer.symbol.church = [4, 0, 6, 0, 6, 4, 10, 4, 10, 6, 6, 6, 6, 14, 4, 14, 4, 6, 0, 6, 0, 4, 4, 4, 4, 0];
+OpenLayers.Renderer.symbol.rectangle = [0, 0, 4, 0, 4, 10, 0, 10, 0, 0];
 var map = new OpenLayers.Map('map');
 var layer = new OpenLayers.Layer.OSM("Simple OSM Map");
 var vector = new OpenLayers.Layer.Vector('vector');
@@ -117,9 +119,9 @@ var pulsate = function (feature) {
 var geolocate = new OpenLayers.Control.Geolocate({
   bind: false,
   geolocationOptions: {
-    enableHighAccuracy: false,
-    maximumAge: 0,
-    timeout: 7000
+//    enableHighAccuracy: false,
+    maximumAge: 0
+//    timeout: 7000
   }
 });
 map.addControl(geolocate);
@@ -136,7 +138,7 @@ geolocate.events.register("locationupdated", geolocate, function (e) {
   vector.addFeatures([
         new OpenLayers.Feature.Vector(
       e.point, {}, {
-      graphicName: 'cross',
+      graphicName: 'rectangle',
       strokeColor: '#f00',
       strokeWidth: 2,
       fillOpacity: 0,
