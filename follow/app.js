@@ -156,7 +156,7 @@ geolocate.events.register("locationupdated", geolocate, function (e) {
   //  console.log("e: ", e);
   document.getElementById("accuracy").innerHTML = "Accuracy: " + e.position.coords.accuracy + "m";
   document.getElementById("speed").innerHTML = "Speed: " + e.position.coords.speed + "km/h";
-  document.getElementById("time").innerHTML = "Time: " + e.position.timestamp.toDateString();
+  document.getElementById("time").innerHTML = "Time: " + e.position.timestamp;
 });
 geolocate.events.register("locationfailed", this, function () {
   OpenLayers.Console.log('Location detection failed');
