@@ -72,6 +72,7 @@ var style = {
   strokeWidth: 0
 };
 
+var lock = "";
 OpenLayers.Renderer.symbol.church = [4, 0, 6, 0, 6, 4, 10, 4, 10, 6, 6, 6, 6, 14, 4, 14, 4, 6, 0, 6, 0, 4, 4, 4, 4, 0];
 OpenLayers.Renderer.symbol.rectangle = [0, 0, 4, 0, 4, 10, 0, 10, 0, 0];
 var map = new OpenLayers.Map('map');
@@ -119,9 +120,9 @@ var pulsate = function (feature) {
 var geolocate = new OpenLayers.Control.Geolocate({
   bind: false,
   geolocationOptions: {
-//    enableHighAccuracy: false,
+    //    enableHighAccuracy: false,
     maximumAge: 0
-//    timeout: 7000
+    //    timeout: 7000
   }
 });
 map.addControl(geolocate);
@@ -152,7 +153,7 @@ geolocate.events.register("locationupdated", geolocate, function (e) {
     firstGeolocation = false;
     this.bind = true;
   };
-//  console.log("e: ", e);
+  //  console.log("e: ", e);
   document.getElementById("accuracy").innerHTML = "Accuracy: " + e.position.coords.accuracy + "m";
   document.getElementById("speed").innerHTML = "Speed: " + e.position.coords.speed + "km/h";
   document.getElementById("time").innerHTML = "Time: " + e.position.timestamp.toDateString();
@@ -164,6 +165,7 @@ geolocate.events.register("locationfailed", this, function () {
 //document.getElementById('locate').onclick = function() {
 
 function onFollow() {
+  lock = window.navigator.requestWakeLock('screen');
   vector.removeAllFeatures();
   geolocate.deactivate();
   //    document.getElementById('track').checked = false;
@@ -181,3 +183,7 @@ function onFollow() {
 //    }
 //};
 //document.getElementById('track').checked = false;
+
+window.addEventListener('unload', function () {
+  lock.unlock();
+});
