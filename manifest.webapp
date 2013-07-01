@@ -1,0 +1,30 @@
+{
+  "version": "0.1",
+  "name": "Zephyrus",
+  "description": "Follow the Zephyrus wind to your destination.",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/mortar-16.png",
+    "48": "/img/icons/mortar-48.png",
+    "128": "/img/icons/mortar-128.png"
+  },
+  "developer": {
+    "name": "Nicolas Delebecque",
+    "url": "http://www.github.com/nicodel"
+  },
+  "type": "privileged",
+  "fullscreen": "true",
+  "permissions": {
+    "geolocation": {
+      "description": "Required to locate the user's device"
+      },
+    "wake-lock-screen": {
+      "description": "Required to keep the screen turned on"
+      },
+    "power": {
+      "description": "Required to keep the screen turned on"
+    }
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "en"
+}
