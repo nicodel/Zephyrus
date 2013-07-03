@@ -20,24 +20,29 @@
         width: 100%;
         height: 400px;
       }
-      .infos {
-        font-size:2rem;
-      }
-      button {
-        font-size:2rem;
-      }
-      @media (max-width: 360px) {
+      /*  Peak  */
+      @media (max-width: 540px) {
         #map {
-          width: 100%;
+          width:540px;
+          height:auto;
         }
-        @media (max-width: 320px) {
-          #map {
-            width: 100%;
-          }
+        .infos, button {
+          font-size:1.2rem;
+        }
+      }
+      /*  Keon  */
+      @media (max-width: 320px) {
+        #map {
+          width:320px;
+          height:auto;
+        }
+        .infos, button {
+          font-size:1rem;
         }
       }
     </style>
   </head>
+  <!-- Peak sizes : window : 540 / 766 window.screen : 540 / 960 Keon sizes : window : 320 / 365 window.screen : 320 / 480 -->
   
   <body>
     <div id="status">
@@ -45,8 +50,7 @@
       <!-- <div id="lat">Latitude:</div>
       <div id="lon">Longitude:</div>-->
       <div id="speed" class="infos">Speed:</div>
-      <div id="time" class="infos">Time:</div>
-    </div>
+      <!-- <div id="time" class="infos">Time:</div>--></div>
     <button onclick="onFollow()">Follow</button>
     <div id="map"></div>
   </body>
