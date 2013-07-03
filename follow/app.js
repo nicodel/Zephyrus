@@ -188,3 +188,5 @@ function onFollow() {
 window.addEventListener('unload', function () {
   lock.unlock();
 });
+
+onFollow();
