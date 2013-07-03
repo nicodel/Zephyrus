@@ -154,7 +154,6 @@ geolocate.events.register("locationupdated", geolocate, function (e) {
     this.bind = true;
   };
   //  console.log("e: ", e);
-  document.getElementById("tailles").innerHTML = "Tailles: " + window
   document.getElementById("accuracy").innerHTML = "Accuracy: " + e.position.coords.accuracy + "m";
   document.getElementById("speed").innerHTML = "Speed: " + e.position.coords.speed.toFixed(0) + "km/h";
 //  document.getElementById("time").innerHTML = "Time: " + e.position.timestamp;
