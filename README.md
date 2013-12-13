@@ -6,7 +6,7 @@ Le but du projet Zephyr est de proposer une application de navigation GPS entiè
 
 Pour que je puisse enviseager de finaliser ce projet qui me tient à coeur, je l'ai découper en étapes. Chaque étape devrait permettre de travailler sur une fonctionnalité importante. Cela devrait me permettre d'avancer progressivement et de valider ces fonctionalités de manière indépendantes.
 
-1. **Suivre :** Suivre la position de l'appareil sur une carte, tou en ajustant l'angle d'affichage de la carte afin que les déplacements se fassent vers le haut, et le zoom afin que la visibilité des alentours et de la route soient cohérents avec la vitesse de déplacement.
+1. **Suivre :** Suivre la position de l'appareil sur une carte, tout en ajustant l'angle d'affichage de la carte afin que les déplacements se fassent vers le haut, et le zoom afin que la visibilité des alentours et de la route soient cohérents avec la vitesse de déplacement.
 2. **Chercher :** Fournir plusieurs résultats de recherche d'adresse postale, plus ou moins complète. Les résultats peuvent textuels ou visuels, et provenir de plusieurs sources identifiées.
 3. **Proposer :** Fournir plusieurs routes possibles pour un départ et une destination donnée. Les résultats peuvent textuels et visuels. Les critères de choix (route à péage, chemins de terre ...) peuvent être définis à l'avance.
 4. **Guider :** Une route est choisie, et les directions sont donnés à l'utilisateur, lors de ces déplacements, de manière visuel et auditive (plusieurs langues).
